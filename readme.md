@@ -1,9 +1,17 @@
 # gowebserver
 
-go gin api with common functionality and docs.
+go gin api with common functionality and docs side by side.
 
 ## build and run locally
 
 1. edit `.env` as desired
-2. `make run` or `make docker-run`
-3. test `http://localhost:1313` and `http://localhost:8080/ping` for output
+2. run `make docker-run` or `make-run`
+3. test the hugo static site at `http://localhost/` and the gin api health check at `http://localhost/api/ping` for output
+
+## dependencies to install
+
+- [golang](https://go.dev/doc/install)
+- [hugo](https://gohugo.io/installation/)
+- [caddy](https://caddyserver.com/docs/install)
+- [docker](https://docs.docker.com/get-docker/)
+

@@ -6,9 +6,10 @@ import (
 )
 
 func Routes(r *gin.Engine) {
+	api := r.Group("/api")
 	// health status routes
-	r.GET("/health", handlers.HealthHandler)
-	r.GET("/isActive", handlers.HealthHandler)
-	r.GET("/active", handlers.HealthHandler)
-	r.GET("/ping", handlers.HealthHandler)
+	api.GET("/health", handlers.HealthHandler)
+	api.GET("/isActive", handlers.HealthHandler)
+	api.GET("/active", handlers.HealthHandler)
+	api.GET("/ping", handlers.HealthHandler)
 }

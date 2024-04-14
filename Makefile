@@ -44,7 +44,8 @@ test:
 run:
 	make clean
 	make run-api &
-	make run-docs
+	make run-docs &
+	caddy run
 
 docker-build:
 	docker build -t gowebserver .
@@ -52,4 +53,4 @@ docker-build:
 docker-run:
 	make clean
 	make docker-build
-	docker run -p 1313:1313 -p 8080:8080 gowebserver
+	docker run -p 80:80 gowebserver
