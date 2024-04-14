@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Go Web Server
 type: docs
 ---
 

@@ -8,7 +8,6 @@ import (
 
 func AddUser(user models.User) error {
 	db := inits.GetDb()
-
 	result := db.Create(&user)
 	utils.HandleError(result.Error)
 

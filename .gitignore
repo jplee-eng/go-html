@@ -12,3 +12,4 @@ go.work
 web/public/
 web/resources/_gen
 web/static/**/fonts
+api/bin/gowebserver
