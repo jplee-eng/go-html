@@ -9,3 +9,6 @@
 *.test
 *.out
 go.work
+web/public/
+web/resources/_gen
+web/static/**/fonts

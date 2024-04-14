@@ -7,6 +7,9 @@ BINARY_NAME = gowebserver
 
 all: test build
 
+build-docs:
+	cd web && hugo --minify
+
 build:
 	$(GOBUILD) -o ./bin/$(BINARY_NAME) -v ./cmd/gowebserver
 
@@ -20,3 +23,6 @@ clean:
 run:
 	$(GOBUILD) -o ./bin/$(BINARY_NAME) -v ./cmd/gowebserver
 	./bin/$(BINARY_NAME)
+
+run-docs:
+	cd web && hugo --minify serve
