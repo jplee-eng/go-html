@@ -43,7 +43,7 @@ test:
 
 run:
 	make clean
-	make run-api
+	make run-api &
 	make run-docs
 
 docker-build:
