@@ -14,4 +14,3 @@ go gin api with common functionality and docs side by side.
 - [hugo](https://gohugo.io/installation/)
 - [caddy](https://caddyserver.com/docs/install)
 - [docker](https://docs.docker.com/get-docker/)
-

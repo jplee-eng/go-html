@@ -9,7 +9,7 @@ BINARY_NAME = gowebserver
 all: test build
 
 build-api:
-	cd $(API_DIR) && $(GOBUILD) -o ./bin/gowebserver -v ./cmd/gowebserver/main.go
+	cd $(API_DIR) && $(GOBUILD) -o ./bin/$(BINARY_NAME) -v ./cmd/$(BINARY_NAME)/main.go
 
 build-docs:
 	hugo --source $(WEB_DIR) --minify
@@ -48,9 +48,9 @@ run:
 	caddy run
 
 docker-build:
-	docker build -t gowebserver .
+	docker build -t $(BINARY_NAME):latest .
 
 docker-run:
 	make clean
 	make docker-build
-	docker run -p 80:80 gowebserver
+	docker rm -f $(BINARY_NAME) || true && docker run --name $(BINARY_NAME) -p 80:80 $(BINARY_NAME)
