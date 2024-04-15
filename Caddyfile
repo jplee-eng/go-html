@@ -1,4 +1,9 @@
-localhost:80
-
-reverse_proxy /api/* localhost:3040
-reverse_proxy localhost:1313
+localhost:80 {
+	handle {
+		reverse_proxy /api/* localhost:3040
+	}
+	handle {
+		root * /srv
+		file_server
+	}
+}

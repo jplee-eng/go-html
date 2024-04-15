@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Start Hugo, Gin, and Caddy
-hugo server --bind 0.0.0.0 --minify --source docs --environment production &
+# Run Gin server binary and start Caddy
 ./gowebserver &
 caddy run --config /etc/caddy/Caddyfile

@@ -52,5 +52,6 @@ docker-build:
 
 docker-run:
 	make clean
+	make
 	make docker-build
 	docker rm -f $(BINARY_NAME) || true && docker run --name $(BINARY_NAME) -p 80:80 $(BINARY_NAME)
