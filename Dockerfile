@@ -17,15 +17,18 @@ COPY web/ ./web/
 COPY web/config.toml .
 RUN make build-docs
 
+### Caddy ###
+FROM caddy:2-alpine AS caddy-builder
+
 ### Final Image on Alpine ###
-FROM alpine:latest
+FROM alpine:3.18
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY --from=builder /app/api/bin/gowebserver .
 RUN chmod +x gowebserver
 COPY --from=builder /app/web/public /srv
 # Copy Caddy binary
-COPY --from=caddy:latest /usr/bin/caddy /usr/bin/caddy
+COPY --from=caddy-builder /usr/bin/caddy /usr/bin/caddy
 COPY Caddyfile /etc/caddy/Caddyfile
 # Copy entrypoint
 COPY entrypoint.sh /app/entrypoint.sh
