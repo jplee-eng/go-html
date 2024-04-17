@@ -14,7 +14,7 @@ func init() {
 	fmt.Print("Read inits after editing env db string")
 }
 func main() {
-	gin.SetMode(gin.ReleaseMode)
+	// gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 	routes.Routes(r)
 	r.Run(":3040")

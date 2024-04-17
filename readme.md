@@ -5,7 +5,7 @@ go gin api with common functionality and docs side by side.
 ## build and run locally
 
 1. edit `.env` as desired
-2. run `make docker-run` or `make-run`
+2. run `make docker-run` or `make local-run`
 3. test the hugo static site at `http://localhost/` and the gin api health check at `http://localhost/api/ping` for output
 
 ## dependencies to install

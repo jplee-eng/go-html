@@ -41,11 +41,11 @@ test:
 	make test-api
 	make test-docs
 
-run:
+local-run:
 	make clean
 	make run-api &
 	make run-docs &
-	caddy run
+	caddy run --adapter caddyfile --config ./Local.Caddyfile
 
 docker-build:
 	docker build -t $(BINARY_NAME):latest .
