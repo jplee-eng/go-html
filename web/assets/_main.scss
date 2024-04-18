@@ -150,12 +150,6 @@ body[dir="rtl"] .book-menu {
 
 .book-section-flat {
   margin: $padding-16 * 2 0;
-  
-  > a,
-  > span,
-  > label {
-    font-weight: bolder;
-  }
 
   > ul {
     padding-inline-start: 0;

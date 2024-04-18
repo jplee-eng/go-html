@@ -1,19 +1,12 @@
 ---
 date: "2024-04-13"
-linktitle: "API with Go and Gin"
+linktitle: "An API Using Go and Gin"
 menu: "main"
-title: "API with Go and Gin"
-tags: [
-    "go",
-    "golang",
-]
-categories: [
-    "Development",
-    "Web",
-]
+title: "An API Using Go and Gin"
+tags: ["go"]
+categories: ["Development", "APIs"]
 weight: "10"
 ---
-
 
 ## Introduction
 

@@ -1,12 +1,12 @@
 # gowebserver
 
-go gin api with common functionality and docs side by side.
+gin api with common functionality and hugo rendered docs side by side.
 
 ## build and run locally
 
-1. edit `.env` as desired
-2. run `make docker-run` or `make local-run`
-3. test the hugo static site at `http://localhost/` and the gin api health check at `http://localhost/api/ping` for output
+1. clone repo, change into the directory, change the name of `.env.example` to `.env` and update its values as desired.
+2. for docker, start the docker daemon and run `make docker-run` otherwise use `make local-run`.
+3. test the hugo static site at `http://localhost/` and the gin api health. check at `http://localhost/api/ping` for output.
 
 ## dependencies to install
 

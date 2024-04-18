@@ -6,36 +6,30 @@ type: docs
 # Welcome!
 
 {{< columns >}}
-## Astris ipse furtiva
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+## /api
 
+The [api directory](https://github.com/jasonpatricklee/go-web-server/tree/main/api) contains the Gin API. By default it contains a health check handler that can be accessed under /api at [/active](http://localhost/api/active), [/health](http://localhost/api/health), [/isActive](http://localhost/api/isActive), and [/ping](http://localhost/api/ping).
 <--->
 
-## Suis quot vota
+## /web
 
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
+The [web directory](https://github.com/jasonpatricklee/go-web-server/tree/main/web) contains this site you are currently exploring. It is statically rendered by [hugo](https://gohugo.io) usually under 50ms and is configured with the [book theme](https://themes.gohugo.io/themes/hugo-book/).
 {{< /columns >}}
 
+## Project goal
 
-## Tempora nisi nunc
+The end goal for this project is to have as much functionality out of the box as possible without giving up on performance or configuration time. It should be dead simple to set up, enough for non-technical businesses and individuals to easily setup a blog with a few steps.
 
-Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
-tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
-sequens!
+- Lightweight and only using what's needed.
+- Online in just a few clicks.
+- Highly modular and extendable.
 
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
+### Example ideas
 
-## Locis suis novi cum suoque decidit eadem
+- Sign up api route that allows newsletter subscriptions from a blog post.
+- Automatic static site rebuilding from external data changes.
 
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab?
+## Contributing
+
+Please feel free to open PRs and contribute to make this project more useful and simpler to understand and use for everybody. Your contributions do not have to be anything related to the example ideas!

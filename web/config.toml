@@ -1,3 +1,4 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Go Web Server'
+summaryLength = 21
