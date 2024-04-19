@@ -6,6 +6,11 @@ import (
 
 func HandleError(err error) {
 	if err != nil {
-		log.Fatal("Error: ", err)
+		log.Println("Error: ", err)
+	}
+}
+func HandleFatalError(err error) {
+	if err != nil {
+		log.Fatalln("Error: ", err)
 	}
 }

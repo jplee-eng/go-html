@@ -24,7 +24,7 @@ FROM caddy:2-alpine AS caddy-builder
 FROM alpine:3.18
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY --from=builder /app/api/bin/gowebserver .
+COPY --from=builder /app/api/bin/gowebserver /app/api/.env .
 RUN chmod +x gowebserver
 COPY --from=builder /app/web/public /srv
 # Copy Caddy binary
