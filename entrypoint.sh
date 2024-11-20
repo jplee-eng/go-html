@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # Run Gin server binary and start Caddy
-./gowebserver &
+./go-html &
 caddy run --config /etc/caddy/Caddyfile

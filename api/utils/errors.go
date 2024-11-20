@@ -9,6 +9,7 @@ func HandleError(err error) {
 		log.Println("Error: ", err)
 	}
 }
+
 func HandleFatalError(err error) {
 	if err != nil {
 		log.Fatalln("Error: ", err)

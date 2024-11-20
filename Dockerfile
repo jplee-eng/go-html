@@ -10,7 +10,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y hugo
 # API
 COPY api/ ./api/
-RUN go mod init gowebserver
+RUN go mod init go-html
 RUN make build-api
 # Docs
 COPY web/ ./web/
@@ -24,8 +24,8 @@ FROM caddy:2-alpine AS caddy-builder
 FROM alpine:3.18
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY --from=builder /app/api/bin/gowebserver /app/api/.env .
-RUN chmod +x gowebserver
+COPY --from=builder /app/api/bin/go-html /app/api/.env .
+RUN chmod +x go-html
 COPY --from=builder /app/web/public /srv
 # Copy Caddy binary
 COPY --from=caddy-builder /usr/bin/caddy /usr/bin/caddy

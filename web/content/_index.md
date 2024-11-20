@@ -9,12 +9,12 @@ type: docs
 
 ## /api
 
-The [api directory](https://github.com/jasonpatricklee/go-web-server/tree/main/api) contains the Gin API. By default it contains a health check handler that can be accessed under /api at [/active](http://localhost/api/active), [/health](http://localhost/api/health), [/isActive](http://localhost/api/isActive), and [/ping](http://localhost/api/ping).
+The [api directory](https://github.com/jplee-eng/go-html/tree/main/api) contains the Gin API. By default it contains a health check handler that can be accessed under /api at [/active](http://localhost/api/active), [/health](http://localhost/api/health), [/isActive](http://localhost/api/isActive), and [/ping](http://localhost/api/ping).
 <--->
 
 ## /web
 
-The [web directory](https://github.com/jasonpatricklee/go-web-server/tree/main/web) contains this site you are currently exploring. It is statically rendered by [hugo](https://gohugo.io) usually under 50ms and is configured with the [book theme](https://themes.gohugo.io/themes/hugo-book/).
+The [web directory](https://github.com/jplee-eng/go-html/tree/main/web) contains this site you are currently exploring. It is statically rendered by [hugo](https://gohugo.io) usually under 50ms and is configured with the [book theme](https://themes.gohugo.io/themes/hugo-book/).
 {{< /columns >}}
 
 ## Project goal

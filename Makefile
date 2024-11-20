@@ -4,7 +4,7 @@ GOTEST = $(GOCMD) test
 GOCLEAN = $(GOCMD) clean
 API_DIR = api
 WEB_DIR = web
-BINARY_NAME = gowebserver
+BINARY_NAME = go-html
 
 all: test build
 
