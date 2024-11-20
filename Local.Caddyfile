@@ -1,4 +1,0 @@
-localhost:80
-
-reverse_proxy /api/* localhost:3040
-reverse_proxy localhost:1313
